@@ -12,3 +12,7 @@ int kthSmallest(int mat[MAX][MAX], int n, int k)
   }
   return pq.top();
 }
+
+
+-------------------------------------------------------------------------
+  //Try solving with different methods
