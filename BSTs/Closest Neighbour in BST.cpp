@@ -15,3 +15,12 @@ int findMaxForN(Node* root, int N)
     }
 }
 ----------------------------------------------------
+    
+    //Recursive
+    void solver(Node *root, int n , int &ans)
+{
+    if(!root) return ;
+    if(root->key <=n) ans= max(ans, root->key);
+    if(n<root->key) solver(root->left, n,ans);
+    if(n>root->key) solver(root->right, n, ans);
+}
